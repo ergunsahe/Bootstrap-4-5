@@ -1,0 +1,28 @@
+.navbar {
+    border-bottom: #1886C7 1px solid;
+}
+
+.navbar .navbar-brand {
+    color: #1886C7 ;
+    font-size: 24px;
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.nav-link {
+    color: white !important;
+    text-transform: uppercase;
+    transition: color .5s ease ;
+} 
+
+.nav-link:hover {
+    color: #1886C7 !important;
+}
+
+#headerSection {
+    background: url("../images/ana-abad-PuUYdWKw_8s-unsplash.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
