@@ -1,2 +1,2 @@
 # Bootstrap-5-new
-- This aims to represent a neew Bootstrap 5 simple example 
+- This repository aims to represent a neew Bootstrap 5 simple example 
