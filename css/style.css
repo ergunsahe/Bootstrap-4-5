@@ -1,3 +1,23 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+/* general styling */
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+
+h2 {
+    font-size: 32px ;
+    font-weight: 400;
+    color: #1886C7;
+}
+p {
+    font-size: 15px;
+}
+/* header section */
 .navbar {
     border-bottom: #1886C7 1px solid;
 }
@@ -25,4 +45,52 @@
     background: url("../images/ana-abad-PuUYdWKw_8s-unsplash.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
+}
+
+
+#headerSection .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#headerSection .row {
+    height: 100vh;
+}
+
+#headerSection span {
+    color: #1886C7;
+}
+
+.btn-outline-primary {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+/* features section */
+
+#features .fas {
+    font-size: 40px;
+}
+.features-top {
+    transition: color .5s ease;
+}
+.features-top:hover {
+    color: #1886C7;
+    cursor: pointer;
+}
+
+/* History Section */
+
+#ourHistory h2 {
+    border-left: #1886C7 6px solid;
+    padding-left: 30px;
+}
+
+
+
+
+
+#ourHistory p {
+    line-height: 28px;
 }
