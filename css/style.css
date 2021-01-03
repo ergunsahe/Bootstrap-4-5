@@ -1,5 +1,9 @@
 .body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    
 }
 /* general styling */
 h3 {
@@ -20,6 +24,8 @@ p {
 /* header section */
 .navbar {
     border-bottom: #1886C7 1px solid;
+    width: 100vw;
+    
 }
 
 .navbar .navbar-brand {
@@ -45,6 +51,8 @@ p {
     background: url("../images/ana-abad-PuUYdWKw_8s-unsplash.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
+    
+    
 }
 
 
@@ -88,9 +96,208 @@ p {
 }
 
 
-
-
-
 #ourHistory p {
     line-height: 28px;
 }
+
+/* Team Section */
+
+#team .card {
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#team .card:hover {
+    opacity: 1;
+}
+
+#team .fab {
+    font-size: 25px;
+}
+
+/* what we do section */
+
+#whatWeDo {
+    background: linear-gradient(
+        rgba(0,0,0, 0.7),
+        rgba(0,0,0, 0.7)
+    ),
+    url(../images/code.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* Case Study Section */
+
+#caseStudy {
+    background-color: #f4f5f9;
+    line-height: 28px;
+    height: 750px;
+}
+
+.caseArea {
+    background-color: #fff;
+    margin-top: 40px;
+    margin-right: -40px;
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    /* min-height: 400px; */
+}
+
+#caseStudy h3 {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #1886C7;
+}
+
+#caseStudy .fa {
+    font-size: 40px;
+    color: #1886C7;
+}
+
+.caseImage {
+    margin-left: -41px;
+    width: 1200px;
+    height: 1600px;
+    
+}
+
+/* Posrtfolio Section */
+
+#portfolio .col-md-3 {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+#portfolio h4 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#portfolio .fa {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#portfolio p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.imageContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1886C7;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.imageContainer:hover .imageOverlay {
+    opacity: 0.7;
+}
+
+.imageText {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* testimonials section */
+
+#testimonials {
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0, 0.7)
+    ),
+    url(../images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.quote {
+    color: rgba(24,134,199,.6);
+}
+
+.carousel-item img {
+    opacity: .1;
+}
+
+.blockquote-footer {
+    color: #1886C7;
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #f4f5f9;
+}
+#formBtn {
+    /* margin-left: 40%; */
+    margin-top: 15px;
+    width: 100%;
+}
+
+#contact .input-group-text {
+    background-color: #1886C7;
+    border-radius: 0;
+    color: #fff;
+}
+
+
+#contact .form-control, #contact .btn {
+    border-radius: 0;
+}
+
+/* Footer Section */
+#main-footer{
+    color: #fff;
+    background-color: rgba(0,0,0, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
