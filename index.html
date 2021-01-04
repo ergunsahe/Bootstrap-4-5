@@ -17,6 +17,11 @@
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet" >
 
+    <!-- Scroolreveal Js -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal@4"></script> -->
+    
+
     <title>BootMe</title>
   </head>
   <body>
@@ -51,7 +56,7 @@
     <header id="headerSection">
         <div class="overlay">
             <div class="container">
-                <div class="row text-center">
+                <div class="row text-center mainContent">
                     <div class="col my-auto">
                         <h1 class="display-1 text-white"><span>BootMe</span> Landing Theme</h1>
                         <p class="text-muted"><em> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </em></p>
@@ -118,13 +123,13 @@
     <section id = "ourHistory">
         <div class="container">
            <div class="row mt-5">
-               <div class="col-md-6 ">
+               <div class="col-lg-6 historyLeft">
                 <img src="images/monitor.png" class="img-fluid me-5" alt="Our History">
                </div>
-               <div class="col-md-6">
+               <div class="col-lg-6 historyRight">
                     <h2 class="mb-5">OUR HISTORY</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. sed diam voluptua. </p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
                     <button type="button" class="btn btn-outline-primary mt-5 mt-5">Check our Work</button>
                </div>
            </div> 
@@ -137,7 +142,7 @@
     <div id="team" class="mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 team1">
                    <div class="card text-center">
                        <div class="card-block">
                            <img src="images/person.png" class="img-fluid  rounded-circle my-4">
@@ -159,7 +164,7 @@
                        </div>
                    </div>   
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 team2">
                    <div class="card text-center">
                        <div class="card-block">
                            <img src="images/person.png" class="img-fluid  rounded-circle my-4">
@@ -181,7 +186,7 @@
                        </div>
                    </div>   
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 team3">
                    <div class="card text-center">
                        <div class="card-block">
                            <img src="images/person.png" class="img-fluid  rounded-circle my-4">
@@ -203,7 +208,7 @@
                        </div>
                    </div>   
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 team4">
                    <div class="card text-center">
                        <div class="card-block">
                            <img src="images/person.png" class="img-fluid  rounded-circle my-4">
@@ -239,7 +244,7 @@
                     <p class="text-muted"><em>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </em></p>
                 </div>
                 <div class="col-md-6 text-center mx-auto">
-                    <a href="#" class="video" data-video="https://www.youtube.com/embed/0B2bhFttDuw" data-bs-toggle="modal" data-bs-target="#videoModal">
+                    <a href="#" id="link" class="video" data-video="https://www.youtube.com/embed/0B2bhFttDuw" data-bs-toggle="modal" data-bs-target="#videoModal">
                         <i class="far fa-play-circle fa-5x"></i>  
                     </a>
                 </div>
@@ -248,12 +253,13 @@
     </section>
 
     <!-- what we do section Modal -->
-    <div class="modal fade" id="videoModal">
+    <div class="modal fade" id="videoModal" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
+                
                 <div class="modal-body">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <iframe id="ytplayer" width="100%" height="400px" src="https://www.youtube.com/embed/0B2bhFttDuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
             </div>
         </div>
@@ -543,17 +549,64 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="js/bootstrap.js" ></script>
+  
     <script src="js/jquery-3.2.1.js" ></script>
-    <script src="js/lightbox.js" ></script>
     <script src="js/main.js"></script>
+    <script src="js/bootstrap.js" ></script>
+    <script src="js/lightbox.js" ></script>
+    
+    
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.mainContent', {
+            duration:3000
+        });
+        
+        sr.reveal('#features', {
+            duration:3000
+        });
+        sr.reveal('.historyLeft', {
+            origin: 'left',
+            duration:3000,
+            viewFactor:0.2
+        });
+        sr.reveal('.historyRight', {
+            origin: 'right',
+            duration:3000,
+            viewFactor:0.4
+        });
+        sr.reveal('.team1', {
+            duration:3000,
+            origin: 'left',
+            viewFactor:0.4
+        });
+        sr.reveal('.team2', {
+            delay:500,
+            duration:3000,
+            origin: 'left',
+            viewFactor:0.4
+        });
+        sr.reveal('.team3', {
+            delay:1000,
+            duration:3000,
+            origin: 'left',
+            viewFactor:0.4
+        });
+        sr.reveal('.team4', {
+            delay:1500,
+            duration:3000,
+            origin: 'left',
+            viewFactor:0.4
+        });
+		// ScrollReveal().reveal('.mainContent', { delay: 2000 });
+	</script>
     
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
+   
    
   </body>
 </html>

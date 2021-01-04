@@ -276,6 +276,41 @@ p {
     background-color: rgba(0,0,0, 0.7);
 }
 
+/* Media Queries */
+
+@media screen and (max-width:1200px) {
+    #ourHistory p {
+        line-height: 20px;
+    }
+}
+@media screen and (max-width:992px) {
+    .display-3 {
+            font-size: 48px;
+    }
+    .historyLeft, .historyRight {
+        text-align: center;
+    }
+}
+@media screen and (max-width:768px) {
+    .display-3 {
+        font-size: 35px;
+    }
+    .caseImage {
+        margin-left: 0;
+        width: 550px;
+        height: 700px;
+        padding-bottom: 200px;
+    }
+    .caseArea {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:576px) {
+    .display-3 {
+        font-size: 30px;
+    }
+}
+
 
 
 
